@@ -1,43 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
+<testng-results ignored="0" total="9" passed="9" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-01-11T00:13:35 IST" name="My Suite" finished-at="2026-01-11T00:13:48 IST" duration-ms="13334">
+  <suite started-at="2026-01-12T08:07:05 IST" name="groupingSuite" finished-at="2026-01-12T08:07:06 IST" duration-ms="111">
     <groups>
+      <group name="Sanity">
+        <method signature="GroupingDemo3_Payment.payBycash()[pri:1, instance:AnnotaionsDemo2.GroupingDemo3_Payment@5fe94a96]" name="payBycash" class="AnnotaionsDemo2.GroupingDemo3_Payment"/>
+      </group> <!-- Sanity -->
+      <group name="regression">
+        <method signature="GroupingDemo2_SignUp.signupEmail()[pri:1, instance:AnnotaionsDemo2.GroupingDemo2_SignUp@639c2c1d]" name="signupEmail" class="AnnotaionsDemo2.GroupingDemo2_SignUp"/>
+        <method signature="GroupingDemo3_Payment.payBycash()[pri:1, instance:AnnotaionsDemo2.GroupingDemo3_Payment@5fe94a96]" name="payBycash" class="AnnotaionsDemo2.GroupingDemo3_Payment"/>
+        <method signature="GroupingDemo2_SignUp.signupFacebook()[pri:2, instance:AnnotaionsDemo2.GroupingDemo2_SignUp@639c2c1d]" name="signupFacebook" class="AnnotaionsDemo2.GroupingDemo2_SignUp"/>
+        <method signature="GroupingDemo3_Payment.payByonline()[pri:2, instance:AnnotaionsDemo2.GroupingDemo3_Payment@5fe94a96]" name="payByonline" class="AnnotaionsDemo2.GroupingDemo3_Payment"/>
+        <method signature="GroupingDemo2_SignUp.signupInsta()[pri:3, instance:AnnotaionsDemo2.GroupingDemo2_SignUp@639c2c1d]" name="signupInsta" class="AnnotaionsDemo2.GroupingDemo2_SignUp"/>
+        <method signature="GroupingDemo3_Payment.payCard()[pri:3, instance:AnnotaionsDemo2.GroupingDemo3_Payment@5fe94a96]" name="payCard" class="AnnotaionsDemo2.GroupingDemo3_Payment"/>
+      </group> <!-- regression -->
+      <group name="sanity">
+        <method signature="GroupingDemo_Login.LoginEmail()[pri:1, instance:AnnotaionsDemo2.GroupingDemo_Login@3e694b3f]" name="LoginEmail" class="AnnotaionsDemo2.GroupingDemo_Login"/>
+        <method signature="GroupingDemo3_Payment.payByonline()[pri:2, instance:AnnotaionsDemo2.GroupingDemo3_Payment@5fe94a96]" name="payByonline" class="AnnotaionsDemo2.GroupingDemo3_Payment"/>
+        <method signature="GroupingDemo_Login.loginFaceBook()[pri:2, instance:AnnotaionsDemo2.GroupingDemo_Login@3e694b3f]" name="loginFaceBook" class="AnnotaionsDemo2.GroupingDemo_Login"/>
+        <method signature="GroupingDemo3_Payment.payCard()[pri:3, instance:AnnotaionsDemo2.GroupingDemo3_Payment@5fe94a96]" name="payCard" class="AnnotaionsDemo2.GroupingDemo3_Payment"/>
+        <method signature="GroupingDemo_Login.loginInsta()[pri:3, instance:AnnotaionsDemo2.GroupingDemo_Login@3e694b3f]" name="loginInsta" class="AnnotaionsDemo2.GroupingDemo_Login"/>
+      </group> <!-- sanity -->
     </groups>
-    <test started-at="2026-01-11T00:13:35 IST" name="My Test" finished-at="2026-01-11T00:13:48 IST" duration-ms="13334">
-      <class name="TestNgDemo.OrangeHRMDemo">
-        <test-method signature="openApp()[pri:0, instance:TestNgDemo.OrangeHRMDemo@618b19ad]" started-at="2026-01-11T00:13:35 IST" name="openApp" finished-at="2026-01-11T00:13:42 IST" duration-ms="6753" status="PASS">
+    <test started-at="2026-01-12T08:07:05 IST" name="grouping_Test" finished-at="2026-01-12T08:07:06 IST" duration-ms="111">
+      <class name="AnnotaionsDemo2.GroupingDemo_Login">
+        <test-method signature="LoginEmail()[pri:1, instance:AnnotaionsDemo2.GroupingDemo_Login@3e694b3f]" started-at="2026-01-12T08:07:05 IST" name="LoginEmail" finished-at="2026-01-12T08:07:06 IST" duration-ms="8" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- openApp -->
-        <test-method signature="testLogo()[pri:1, instance:TestNgDemo.OrangeHRMDemo@618b19ad]" started-at="2026-01-11T00:13:42 IST" name="testLogo" finished-at="2026-01-11T00:13:42 IST" duration-ms="634" status="PASS">
+        </test-method> <!-- LoginEmail -->
+        <test-method signature="loginFaceBook()[pri:2, instance:AnnotaionsDemo2.GroupingDemo_Login@3e694b3f]" started-at="2026-01-12T08:07:06 IST" name="loginFaceBook" finished-at="2026-01-12T08:07:06 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testLogo -->
-        <test-method signature="login()[pri:2, instance:TestNgDemo.OrangeHRMDemo@618b19ad]" started-at="2026-01-11T00:13:42 IST" name="login" finished-at="2026-01-11T00:13:42 IST" duration-ms="236" status="PASS">
+        </test-method> <!-- loginFaceBook -->
+        <test-method signature="loginInsta()[pri:3, instance:AnnotaionsDemo2.GroupingDemo_Login@3e694b3f]" started-at="2026-01-12T08:07:06 IST" name="loginInsta" finished-at="2026-01-12T08:07:06 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- login -->
-        <test-method signature="logout()[pri:3, instance:TestNgDemo.OrangeHRMDemo@618b19ad]" started-at="2026-01-11T00:13:42 IST" name="logout" finished-at="2026-01-11T00:13:48 IST" duration-ms="5653" status="PASS">
+        </test-method> <!-- loginInsta -->
+      </class> <!-- AnnotaionsDemo2.GroupingDemo_Login -->
+      <class name="AnnotaionsDemo2.GroupingDemo3_Payment">
+        <test-method signature="payBycash()[pri:1, instance:AnnotaionsDemo2.GroupingDemo3_Payment@5fe94a96]" started-at="2026-01-12T08:07:06 IST" name="payBycash" finished-at="2026-01-12T08:07:06 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- logout -->
-      </class> <!-- TestNgDemo.OrangeHRMDemo -->
-      <class name="TestNgDemo.FirstTestcase">
-        <test-method signature="open_app()[pri:1, instance:TestNgDemo.FirstTestcase@397fbdb]" started-at="2026-01-11T00:13:35 IST" name="open_app" finished-at="2026-01-11T00:13:35 IST" duration-ms="8" status="PASS">
+        </test-method> <!-- payBycash -->
+        <test-method signature="payByonline()[pri:2, instance:AnnotaionsDemo2.GroupingDemo3_Payment@5fe94a96]" started-at="2026-01-12T08:07:06 IST" name="payByonline" finished-at="2026-01-12T08:07:06 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- open_app -->
-        <test-method signature="login()[pri:2, instance:TestNgDemo.FirstTestcase@397fbdb]" started-at="2026-01-11T00:13:35 IST" name="login" finished-at="2026-01-11T00:13:35 IST" duration-ms="2" status="PASS">
+        </test-method> <!-- payByonline -->
+        <test-method signature="payCard()[pri:3, instance:AnnotaionsDemo2.GroupingDemo3_Payment@5fe94a96]" started-at="2026-01-12T08:07:06 IST" name="payCard" finished-at="2026-01-12T08:07:06 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- login -->
-        <test-method signature="logout()[pri:3, instance:TestNgDemo.FirstTestcase@397fbdb]" started-at="2026-01-11T00:13:35 IST" name="logout" finished-at="2026-01-11T00:13:35 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- payCard -->
+      </class> <!-- AnnotaionsDemo2.GroupingDemo3_Payment -->
+      <class name="AnnotaionsDemo2.GroupingDemo2_SignUp">
+        <test-method signature="signupEmail()[pri:1, instance:AnnotaionsDemo2.GroupingDemo2_SignUp@639c2c1d]" started-at="2026-01-12T08:07:06 IST" name="signupEmail" finished-at="2026-01-12T08:07:06 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- logout -->
-      </class> <!-- TestNgDemo.FirstTestcase -->
-    </test> <!-- My Test -->
-  </suite> <!-- My Suite -->
+        </test-method> <!-- signupEmail -->
+        <test-method signature="signupFacebook()[pri:2, instance:AnnotaionsDemo2.GroupingDemo2_SignUp@639c2c1d]" started-at="2026-01-12T08:07:06 IST" name="signupFacebook" finished-at="2026-01-12T08:07:06 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signupFacebook -->
+        <test-method signature="signupInsta()[pri:3, instance:AnnotaionsDemo2.GroupingDemo2_SignUp@639c2c1d]" started-at="2026-01-12T08:07:06 IST" name="signupInsta" finished-at="2026-01-12T08:07:06 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signupInsta -->
+      </class> <!-- AnnotaionsDemo2.GroupingDemo2_SignUp -->
+    </test> <!-- grouping_Test -->
+  </suite> <!-- groupingSuite -->
 </testng-results>

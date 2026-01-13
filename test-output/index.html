@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,8 +38,8 @@
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" panel-name="suite-groupingSuite" class="navigator-link">
-              <span class="suite-name border-passed">groupingSuite</span>
+            <a href="#" panel-name="suite-Suite" class="navigator-link">
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,37 +49,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" panel-name="test-xml-groupingSuite" class="navigator-link ">
-                    <span>C:\Users\VamshiKrishna\eclipse-workspace\opencart_version1.0\src\test\java\AnnotaionsDemo2\testng.xml</span>
+                  <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
+                    <span>C:\Users\VamshiKrishna\eclipse-workspace\opencart_version1.0\src\test\java\testNGListners\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="testlist-groupingSuite" class="navigator-link ">
+                  <a href="#" panel-name="testlist-Suite" class="navigator-link ">
                     <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="group-groupingSuite" class="navigator-link ">
-                    <span>3 groups</span>
+                  <a href="#" panel-name="group-Suite" class="navigator-link ">
+                    <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="times-groupingSuite" class="navigator-link ">
+                  <a href="#" panel-name="times-Suite" class="navigator-link ">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="reporter-groupingSuite" class="navigator-link ">
+                  <a href="#" panel-name="reporter-Suite" class="navigator-link ">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="ignored-methods-groupingSuite" class="navigator-link ">
+                  <a href="#" panel-name="ignored-methods-Suite" class="navigator-link ">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="chronological-groupingSuite" class="navigator-link ">
+                  <a href="#" panel-name="chronological-Suite" class="navigator-link ">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -92,61 +92,49 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">9 methods,   9 passed</span>
+                    <span class="method-stats">3 methods, 1 failed,  1 skipped,  1 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testNGListners.ListnersDemo" class="method navigator-link" hash-for-method="getTitle">getTitle</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods skipped suite-Suite"> (hide)</a> <!-- hide-methods skipped suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods skipped suite-Suite"> (show)</a> <!-- show-methods skipped suite-Suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-Suite">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testNGListners.ListnersDemo" class="method navigator-link" hash-for-method="testLogo">testLogo</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
                     <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-groupingSuite" class="hide-methods passed suite-groupingSuite"> (hide)</a> <!-- hide-methods passed suite-groupingSuite -->
-                      <a href="#" panel-name="suite-groupingSuite" class="show-methods passed suite-groupingSuite"> (show)</a> <!-- show-methods passed suite-groupingSuite -->
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
                     </span>
-                    <div class="method-list-content passed suite-groupingSuite">
+                    <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-groupingSuite" title="AnnotaionsDemo2.GroupingDemo_Login" class="method navigator-link" hash-for-method="LoginEmail">LoginEmail</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="testNGListners.ListnersDemo" class="method navigator-link" hash-for-method="loginApp">loginApp</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-groupingSuite" title="AnnotaionsDemo2.GroupingDemo_Login" class="method navigator-link" hash-for-method="loginFaceBook">loginFaceBook</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-groupingSuite" title="AnnotaionsDemo2.GroupingDemo_Login" class="method navigator-link" hash-for-method="loginInsta">loginInsta</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-groupingSuite" title="AnnotaionsDemo2.GroupingDemo3_Payment" class="method navigator-link" hash-for-method="payBycash">payBycash</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-groupingSuite" title="AnnotaionsDemo2.GroupingDemo3_Payment" class="method navigator-link" hash-for-method="payByonline">payByonline</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-groupingSuite" title="AnnotaionsDemo2.GroupingDemo3_Payment" class="method navigator-link" hash-for-method="payCard">payCard</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-groupingSuite" title="AnnotaionsDemo2.GroupingDemo2_SignUp" class="method navigator-link" hash-for-method="signupEmail">signupEmail</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-groupingSuite" title="AnnotaionsDemo2.GroupingDemo2_SignUp" class="method navigator-link" hash-for-method="signupFacebook">signupFacebook</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-groupingSuite" title="AnnotaionsDemo2.GroupingDemo2_SignUp" class="method navigator-link" hash-for-method="signupInsta">signupInsta</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content passed suite-groupingSuite -->
+                    </div> <!-- method-list-content passed suite-Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -157,318 +145,179 @@
     </div> <!-- navigator-root -->
     <div class="wrapper">
       <div class="main-panel-root">
-        <div panel-name="suite-groupingSuite" class="panel groupingSuite">
-          <div class="suite-groupingSuite-class-passed">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">AnnotaionsDemo2.GroupingDemo_Login</span>
+              <img src="failed.png"/>
+              <span class="class-name">testNGListners.ListnersDemo</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="LoginEmail">
-                  </a> <!-- LoginEmail -->
-                  <span class="method-name">LoginEmail</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="loginFaceBook">
-                  </a> <!-- loginFaceBook -->
-                  <span class="method-name">loginFaceBook</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="loginInsta">
-                  </a> <!-- loginInsta -->
-                  <span class="method-name">loginInsta</span>
+                  <a name="getTitle">
+                  </a> <!-- getTitle -->
+                  <span class="method-name">getTitle</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [OrageHRM] but found [OrangeHRM]
+	at testNGListners.ListnersDemo.getTitle(ListnersDemo.java:42)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-groupingSuite-class-passed -->
-          <div class="suite-groupingSuite-class-passed">
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-skipped">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">AnnotaionsDemo2.GroupingDemo3_Payment</span>
+              <img src="skipped.png"/>
+              <span class="class-name">testNGListners.ListnersDemo</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="payBycash">
-                  </a> <!-- payBycash -->
-                  <span class="method-name">payBycash</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="payByonline">
-                  </a> <!-- payByonline -->
-                  <span class="method-name">payByonline</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="payCard">
-                  </a> <!-- payCard -->
-                  <span class="method-name">payCard</span>
+                  <a name="testLogo">
+                  </a> <!-- testLogo -->
+                  <span class="method-name">testLogo</span>
+                  <div class="stack-trace">java.lang.Throwable: Method testNGListners.ListnersDemo.testLogo() on instance testNGListners.ListnersDemo@233795b6 depends on not successfully finished methods 
+[testNGListners.ListnersDemo.getTitle() on instance testNGListners.ListnersDemo@233795b6]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 18 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-groupingSuite-class-passed -->
-          <div class="suite-groupingSuite-class-passed">
+          </div> <!-- suite-Suite-class-skipped -->
+          <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">AnnotaionsDemo2.GroupingDemo2_SignUp</span>
+              <span class="class-name">testNGListners.ListnersDemo</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="signupEmail">
-                  </a> <!-- signupEmail -->
-                  <span class="method-name">signupEmail</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="signupFacebook">
-                  </a> <!-- signupFacebook -->
-                  <span class="method-name">signupFacebook</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="signupInsta">
-                  </a> <!-- signupInsta -->
-                  <span class="method-name">signupInsta</span>
+                  <a name="loginApp">
+                  </a> <!-- loginApp -->
+                  <span class="method-name">loginApp</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-groupingSuite-class-passed -->
-        </div> <!-- panel groupingSuite -->
-        <div panel-name="test-xml-groupingSuite" class="panel">
+          </div> <!-- suite-Suite-class-passed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\VamshiKrishna\eclipse-workspace\opencart_version1.0\src\test\java\AnnotaionsDemo2\testng.xml</span>
+            <span class="header-content">C:\Users\VamshiKrishna\eclipse-workspace\opencart_version1.0\src\test\java\testNGListners\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;groupingSuite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;grouping_Test&quot;&gt;
+&lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;testNGListners.MyListner&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;AnnotaionsDemo2.GroupingDemo_Login&quot;/&gt;
-      &lt;class name=&quot;AnnotaionsDemo2.GroupingDemo2_SignUp&quot;/&gt;
-      &lt;class name=&quot;AnnotaionsDemo2.GroupingDemo3_Payment&quot;/&gt;
+      &lt;class name=&quot;testNGListners.ListnersDemo&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- grouping_Test --&gt;
-&lt;/suite&gt; &lt;!-- groupingSuite --&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="testlist-groupingSuite" class="panel">
+        <div panel-name="testlist-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Tests for groupingSuite</span>
+            <span class="header-content">Tests for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">grouping_Test (3 classes)</span>
+                <span class="test-name">Test (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="group-groupingSuite" class="panel">
+        <div panel-name="group-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Groups for groupingSuite</span>
+            <span class="header-content">Groups for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="test-group">
-              <span class="test-group-name">Sanity</span>
-              <br/>
-              <div class="method-in-group">
-                <span class="method-in-group-name">payBycash</span>
-                <br/>
-              </div> <!-- method-in-group -->
-            </div> <!-- test-group -->
-            <div class="test-group">
-              <span class="test-group-name">regression</span>
-              <br/>
-              <div class="method-in-group">
-                <span class="method-in-group-name">payBycash</span>
-                <br/>
-              </div> <!-- method-in-group -->
-              <div class="method-in-group">
-                <span class="method-in-group-name">payByonline</span>
-                <br/>
-              </div> <!-- method-in-group -->
-              <div class="method-in-group">
-                <span class="method-in-group-name">payCard</span>
-                <br/>
-              </div> <!-- method-in-group -->
-              <div class="method-in-group">
-                <span class="method-in-group-name">signupEmail</span>
-                <br/>
-              </div> <!-- method-in-group -->
-              <div class="method-in-group">
-                <span class="method-in-group-name">signupFacebook</span>
-                <br/>
-              </div> <!-- method-in-group -->
-              <div class="method-in-group">
-                <span class="method-in-group-name">signupInsta</span>
-                <br/>
-              </div> <!-- method-in-group -->
-            </div> <!-- test-group -->
-            <div class="test-group">
-              <span class="test-group-name">sanity</span>
-              <br/>
-              <div class="method-in-group">
-                <span class="method-in-group-name">LoginEmail</span>
-                <br/>
-              </div> <!-- method-in-group -->
-              <div class="method-in-group">
-                <span class="method-in-group-name">loginFaceBook</span>
-                <br/>
-              </div> <!-- method-in-group -->
-              <div class="method-in-group">
-                <span class="method-in-group-name">loginInsta</span>
-                <br/>
-              </div> <!-- method-in-group -->
-              <div class="method-in-group">
-                <span class="method-in-group-name">payByonline</span>
-                <br/>
-              </div> <!-- method-in-group -->
-              <div class="method-in-group">
-                <span class="method-in-group-name">payCard</span>
-                <br/>
-              </div> <!-- method-in-group -->
-            </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="times-groupingSuite" class="panel">
+        <div panel-name="times-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Times for groupingSuite</span>
+            <span class="header-content">Times for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="times-div">
               <script type="text/javascript">
-suiteTableInitFunctions.push('tableData_groupingSuite');
-function tableData_groupingSuite() {
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
 var data = new google.visualization.DataTable();
 data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(9);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'LoginEmail')
-data.setCell(0, 2, 'AnnotaionsDemo2.GroupingDemo_Login')
-data.setCell(0, 3, 8);
+data.setCell(0, 1, 'loginApp')
+data.setCell(0, 2, 'testNGListners.ListnersDemo')
+data.setCell(0, 3, 11793);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'payBycash')
-data.setCell(1, 2, 'AnnotaionsDemo2.GroupingDemo3_Payment')
-data.setCell(1, 3, 2);
+data.setCell(1, 1, 'getTitle')
+data.setCell(1, 2, 'testNGListners.ListnersDemo')
+data.setCell(1, 3, 13);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'signupFacebook')
-data.setCell(2, 2, 'AnnotaionsDemo2.GroupingDemo2_SignUp')
-data.setCell(2, 3, 2);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'payCard')
-data.setCell(3, 2, 'AnnotaionsDemo2.GroupingDemo3_Payment')
-data.setCell(3, 3, 2);
-data.setCell(4, 0, 4)
-data.setCell(4, 1, 'loginFaceBook')
-data.setCell(4, 2, 'AnnotaionsDemo2.GroupingDemo_Login')
-data.setCell(4, 3, 2);
-data.setCell(5, 0, 5)
-data.setCell(5, 1, 'signupInsta')
-data.setCell(5, 2, 'AnnotaionsDemo2.GroupingDemo2_SignUp')
-data.setCell(5, 3, 2);
-data.setCell(6, 0, 6)
-data.setCell(6, 1, 'signupEmail')
-data.setCell(6, 2, 'AnnotaionsDemo2.GroupingDemo2_SignUp')
-data.setCell(6, 3, 1);
-data.setCell(7, 0, 7)
-data.setCell(7, 1, 'loginInsta')
-data.setCell(7, 2, 'AnnotaionsDemo2.GroupingDemo_Login')
-data.setCell(7, 3, 1);
-data.setCell(8, 0, 8)
-data.setCell(8, 1, 'payByonline')
-data.setCell(8, 2, 'AnnotaionsDemo2.GroupingDemo3_Payment')
-data.setCell(8, 3, 1);
-window.suiteTableData['groupingSuite']= { tableData: data, tableDiv: 'times-div-groupingSuite'}
+data.setCell(2, 1, 'testLogo')
+data.setCell(2, 2, 'testNGListners.ListnersDemo')
+data.setCell(2, 3, 0);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 21 ms</span>
-              <div id="times-div-groupingSuite">
-              </div> <!-- times-div-groupingSuite -->
+              <span class="suite-total-time">Total running time: 11 seconds</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="reporter-groupingSuite" class="panel">
+        <div panel-name="reporter-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Reporter output for groupingSuite</span>
+            <span class="header-content">Reporter output for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="ignored-methods-groupingSuite" class="panel">
+        <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="chronological-groupingSuite" class="panel">
+        <div panel-name="chronological-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">AnnotaionsDemo2.GroupingDemo_Login</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">LoginEmail</span>
+              <div class="chronological-class-name">testNGListners.ListnersDemo</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
                 <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">loginApp</span>
+                <span class="method-start">2014 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">loginFaceBook</span>
-                <span class="method-start">14 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">getTitle</span>
+                <span class="method-start">13814 ms</span>
               </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">loginInsta</span>
-                <span class="method-start">20 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">AnnotaionsDemo2.GroupingDemo2_SignUp</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">signupEmail</span>
-                <span class="method-start">25 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">signupFacebook</span>
-                <span class="method-start">27 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">signupInsta</span>
-                <span class="method-start">32 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">AnnotaionsDemo2.GroupingDemo3_Payment</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">payBycash</span>
-                <span class="method-start">36 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">payByonline</span>
-                <span class="method-start">43 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">payCard</span>
-                <span class="method-start">48 ms</span>
-              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">13844 ms</span>
+              </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

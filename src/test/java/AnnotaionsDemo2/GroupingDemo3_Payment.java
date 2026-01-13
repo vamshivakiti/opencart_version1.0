@@ -4,15 +4,15 @@ import org.testng.annotations.Test;
 
 public class GroupingDemo3_Payment {
 
-	@Test(priority = 1, groups ={"Sanity", "regression"})
+	@Test(priority = 1, groups ={"Sanity", "regression","functional"})
 	void payBycash() {
 		System.out.println("Pay by cash");
 	}
-	@Test(priority = 2, groups ={"regression", "sanity"})
+	@Test(priority = 2, groups ={"regression", "sanity","functional"})
 	void payByonline(){
 		System.out.println("Payment by card");
 	}
-	@Test(priority = 3, groups ={"sanity","regression"})
+	@Test(priority = 3, groups ={"sanity","regression","functional"})
 	void payCard() {
 		System.out.println("Payment by online");
 	}

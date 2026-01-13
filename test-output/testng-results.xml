@@ -1,71 +1,105 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="9" passed="9" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="1" failed="1" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-01-12T08:07:05 IST" name="groupingSuite" finished-at="2026-01-12T08:07:06 IST" duration-ms="111">
+  <suite started-at="2026-01-13T12:36:07 IST" name="Suite" finished-at="2026-01-13T12:36:21 IST" duration-ms="14114">
     <groups>
-      <group name="Sanity">
-        <method signature="GroupingDemo3_Payment.payBycash()[pri:1, instance:AnnotaionsDemo2.GroupingDemo3_Payment@5fe94a96]" name="payBycash" class="AnnotaionsDemo2.GroupingDemo3_Payment"/>
-      </group> <!-- Sanity -->
-      <group name="regression">
-        <method signature="GroupingDemo2_SignUp.signupEmail()[pri:1, instance:AnnotaionsDemo2.GroupingDemo2_SignUp@639c2c1d]" name="signupEmail" class="AnnotaionsDemo2.GroupingDemo2_SignUp"/>
-        <method signature="GroupingDemo3_Payment.payBycash()[pri:1, instance:AnnotaionsDemo2.GroupingDemo3_Payment@5fe94a96]" name="payBycash" class="AnnotaionsDemo2.GroupingDemo3_Payment"/>
-        <method signature="GroupingDemo2_SignUp.signupFacebook()[pri:2, instance:AnnotaionsDemo2.GroupingDemo2_SignUp@639c2c1d]" name="signupFacebook" class="AnnotaionsDemo2.GroupingDemo2_SignUp"/>
-        <method signature="GroupingDemo3_Payment.payByonline()[pri:2, instance:AnnotaionsDemo2.GroupingDemo3_Payment@5fe94a96]" name="payByonline" class="AnnotaionsDemo2.GroupingDemo3_Payment"/>
-        <method signature="GroupingDemo2_SignUp.signupInsta()[pri:3, instance:AnnotaionsDemo2.GroupingDemo2_SignUp@639c2c1d]" name="signupInsta" class="AnnotaionsDemo2.GroupingDemo2_SignUp"/>
-        <method signature="GroupingDemo3_Payment.payCard()[pri:3, instance:AnnotaionsDemo2.GroupingDemo3_Payment@5fe94a96]" name="payCard" class="AnnotaionsDemo2.GroupingDemo3_Payment"/>
-      </group> <!-- regression -->
-      <group name="sanity">
-        <method signature="GroupingDemo_Login.LoginEmail()[pri:1, instance:AnnotaionsDemo2.GroupingDemo_Login@3e694b3f]" name="LoginEmail" class="AnnotaionsDemo2.GroupingDemo_Login"/>
-        <method signature="GroupingDemo3_Payment.payByonline()[pri:2, instance:AnnotaionsDemo2.GroupingDemo3_Payment@5fe94a96]" name="payByonline" class="AnnotaionsDemo2.GroupingDemo3_Payment"/>
-        <method signature="GroupingDemo_Login.loginFaceBook()[pri:2, instance:AnnotaionsDemo2.GroupingDemo_Login@3e694b3f]" name="loginFaceBook" class="AnnotaionsDemo2.GroupingDemo_Login"/>
-        <method signature="GroupingDemo3_Payment.payCard()[pri:3, instance:AnnotaionsDemo2.GroupingDemo3_Payment@5fe94a96]" name="payCard" class="AnnotaionsDemo2.GroupingDemo3_Payment"/>
-        <method signature="GroupingDemo_Login.loginInsta()[pri:3, instance:AnnotaionsDemo2.GroupingDemo_Login@3e694b3f]" name="loginInsta" class="AnnotaionsDemo2.GroupingDemo_Login"/>
-      </group> <!-- sanity -->
     </groups>
-    <test started-at="2026-01-12T08:07:05 IST" name="grouping_Test" finished-at="2026-01-12T08:07:06 IST" duration-ms="111">
-      <class name="AnnotaionsDemo2.GroupingDemo_Login">
-        <test-method signature="LoginEmail()[pri:1, instance:AnnotaionsDemo2.GroupingDemo_Login@3e694b3f]" started-at="2026-01-12T08:07:05 IST" name="LoginEmail" finished-at="2026-01-12T08:07:06 IST" duration-ms="8" status="PASS">
+    <test started-at="2026-01-13T12:36:07 IST" name="Test" finished-at="2026-01-13T12:36:21 IST" duration-ms="14114">
+      <class name="testNGListners.ListnersDemo">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testNGListners.ListnersDemo@233795b6]" started-at="2026-01-13T12:36:07 IST" name="setUp" finished-at="2026-01-13T12:36:09 IST" duration-ms="1969" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- LoginEmail -->
-        <test-method signature="loginFaceBook()[pri:2, instance:AnnotaionsDemo2.GroupingDemo_Login@3e694b3f]" started-at="2026-01-12T08:07:06 IST" name="loginFaceBook" finished-at="2026-01-12T08:07:06 IST" duration-ms="2" status="PASS">
+        </test-method> <!-- setUp -->
+        <test-method signature="loginApp()[pri:1, instance:testNGListners.ListnersDemo@233795b6]" started-at="2026-01-13T12:36:09 IST" name="loginApp" finished-at="2026-01-13T12:36:21 IST" duration-ms="11793" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginFaceBook -->
-        <test-method signature="loginInsta()[pri:3, instance:AnnotaionsDemo2.GroupingDemo_Login@3e694b3f]" started-at="2026-01-12T08:07:06 IST" name="loginInsta" finished-at="2026-01-12T08:07:06 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- loginApp -->
+        <test-method signature="getTitle()[pri:2, instance:testNGListners.ListnersDemo@233795b6]" started-at="2026-01-13T12:36:21 IST" name="getTitle" finished-at="2026-01-13T12:36:21 IST" duration-ms="13" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [OrageHRM] but found [OrangeHRM]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [OrageHRM] but found [OrangeHRM]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at testNGListners.ListnersDemo.getTitle(ListnersDemo.java:42)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginInsta -->
-      </class> <!-- AnnotaionsDemo2.GroupingDemo_Login -->
-      <class name="AnnotaionsDemo2.GroupingDemo3_Payment">
-        <test-method signature="payBycash()[pri:1, instance:AnnotaionsDemo2.GroupingDemo3_Payment@5fe94a96]" started-at="2026-01-12T08:07:06 IST" name="payBycash" finished-at="2026-01-12T08:07:06 IST" duration-ms="2" status="PASS">
+        </test-method> <!-- getTitle -->
+        <test-method signature="testLogo()[pri:3, instance:testNGListners.ListnersDemo@233795b6]" started-at="2026-01-13T12:36:21 IST" name="testLogo" finished-at="2026-01-13T12:36:21 IST" depends-on-methods="testNGListners.ListnersDemo.getTitle" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method testNGListners.ListnersDemo.testLogo() on instance testNGListners.ListnersDemo@233795b6 depends on not successfully finished methods 
+[testNGListners.ListnersDemo.getTitle() on instance testNGListners.ListnersDemo@233795b6]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method testNGListners.ListnersDemo.testLogo() on instance testNGListners.ListnersDemo@233795b6 depends on not successfully finished methods 
+[testNGListners.ListnersDemo.getTitle() on instance testNGListners.ListnersDemo@233795b6]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- payBycash -->
-        <test-method signature="payByonline()[pri:2, instance:AnnotaionsDemo2.GroupingDemo3_Payment@5fe94a96]" started-at="2026-01-12T08:07:06 IST" name="payByonline" finished-at="2026-01-12T08:07:06 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- testLogo -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testNGListners.ListnersDemo@233795b6]" started-at="2026-01-13T12:36:21 IST" name="tearDown" finished-at="2026-01-13T12:36:21 IST" duration-ms="242" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- payByonline -->
-        <test-method signature="payCard()[pri:3, instance:AnnotaionsDemo2.GroupingDemo3_Payment@5fe94a96]" started-at="2026-01-12T08:07:06 IST" name="payCard" finished-at="2026-01-12T08:07:06 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- payCard -->
-      </class> <!-- AnnotaionsDemo2.GroupingDemo3_Payment -->
-      <class name="AnnotaionsDemo2.GroupingDemo2_SignUp">
-        <test-method signature="signupEmail()[pri:1, instance:AnnotaionsDemo2.GroupingDemo2_SignUp@639c2c1d]" started-at="2026-01-12T08:07:06 IST" name="signupEmail" finished-at="2026-01-12T08:07:06 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- signupEmail -->
-        <test-method signature="signupFacebook()[pri:2, instance:AnnotaionsDemo2.GroupingDemo2_SignUp@639c2c1d]" started-at="2026-01-12T08:07:06 IST" name="signupFacebook" finished-at="2026-01-12T08:07:06 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- signupFacebook -->
-        <test-method signature="signupInsta()[pri:3, instance:AnnotaionsDemo2.GroupingDemo2_SignUp@639c2c1d]" started-at="2026-01-12T08:07:06 IST" name="signupInsta" finished-at="2026-01-12T08:07:06 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- signupInsta -->
-      </class> <!-- AnnotaionsDemo2.GroupingDemo2_SignUp -->
-    </test> <!-- grouping_Test -->
-  </suite> <!-- groupingSuite -->
+        </test-method> <!-- tearDown -->
+      </class> <!-- testNGListners.ListnersDemo -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

@@ -3,15 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="AnnotaionsDemo2.dependancyDemo">
+      <class name="testNGListners.ListnersDemo">
         <methods>
-          <include name="advSearch"/>
-          <include name="openApp"/>
-          <include name="Login"/>
-          <include name="search"/>
-          <include name="logout"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="testLogo"/>
+          <include name="getTitle"/>
         </methods>
-      </class> <!-- AnnotaionsDemo2.dependancyDemo -->
+      </class> <!-- testNGListners.ListnersDemo -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

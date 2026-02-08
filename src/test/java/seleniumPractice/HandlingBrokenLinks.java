@@ -16,7 +16,7 @@ public class HandlingBrokenLinks {
 	public static void main(String[] args) throws IOException {
 		 int brokenLinks=0;
 WebDriver driver = new ChromeDriver();
-driver.get("http://www.deadlinkcity.com/");
+driver.get("https://www.oracle.com/in/");
 driver.manage().window().maximize();
 driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 
@@ -24,27 +24,27 @@ driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 List<WebElement> links = driver.findElements(By.tagName("a"));
 System.out.println("Total Number of Links is :"+links.size());
 
-for(WebElement linksNames:links) {
+for(WebElement linksElements:links) {
 	//System.out.println(linksNames.getText());
-	String hrefAtLinks = linksNames.getAttribute("href");
+	String hrefAtValue = linksElements.getAttribute("href");
 	
-	if(hrefAtLinks== null || hrefAtLinks.isEmpty()) {
+	if(hrefAtValue== null || hrefAtValue.isEmpty()) {
 		System.out.println("Links cannot be verified that it does not have Href value");
 		continue;
 	}
 	
 	//Hit url to the server.
 
-	URL linkUrl = new URL(hrefAtLinks);
+	URL linkUrl = new URL(hrefAtValue);
 	   HttpURLConnection conn=(HttpURLConnection) linkUrl.openConnection();
 	   conn.connect();
 	   if(conn.getResponseCode()>=400)
 	   {
-		   System.out.println(hrefAtLinks+ "---> is a broken links");
+		   System.out.println(hrefAtValue+ "---> is a broken links");
 		   brokenLinks++;
 	   }
 	   else {
-		System.out.println(hrefAtLinks+"---> is not a broken links");
+		System.out.println(hrefAtValue +"---> is not a broken links");
 	}
 	   
     }

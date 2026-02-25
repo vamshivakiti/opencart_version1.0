@@ -10,12 +10,17 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 
 public class HandlingBrikenLinksDemo2 {
 
 	public static void main(String[] args) throws IOException {
-
-		WebDriver driver = new ChromeDriver();
+	
+		ChromeOptions options = new ChromeOptions();
+		WebDriver driver = new ChromeDriver(options);
+		options.addArguments("--Headless");
+		
+	
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		driver.get("https://testautomationpractice.blogspot.com/");

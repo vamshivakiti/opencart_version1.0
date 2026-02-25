@@ -1,5 +1,6 @@
 package waits;
 
+import java.sql.Driver;
 import java.time.Duration;
 
 import org.openqa.selenium.By;
@@ -8,8 +9,11 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Implicitwaitdemo {
+	 WebDriver driver;
+	 
 
 	public static void main(String[] args) {
+	
 		// TODO Auto-generated method stub
 		
 			//*[@id="shopify-section-sections--18925762281693__header"]/height-observer/store-header/div/div[2]/ul/li[2]/a/span

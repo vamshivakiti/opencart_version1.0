@@ -40,13 +40,14 @@ public class GmailReg {
    }
     driver.findElement(By.xpath("//button[normalize-space()='Forgot email?']")).click();
     Thread.sleep(3000);
-    //Taking Screen Shot of gmail full page
+    //Taking Screen Shot of Gmail full page
     TakesScreenshot tc = (TakesScreenshot) driver;
     File sourceFile=tc.getScreenshotAs(OutputType.FILE);
     File targetFile = new File(System.getProperty("user.dir")+"\\ScreenShotFolder\\gmail.png");
     sourceFile.renameTo(targetFile);
+    
+       // Taking Screenshot of gmailLogo
        WebElement gmailLogo=driver.findElement(By.xpath("//div[@class='FDhDJc']"));
-    // Taking Screenshot of gmailLogo
        File logoSource=gmailLogo.getScreenshotAs(OutputType.FILE);
        File logoTar=new File(System.getProperty("user.dir")+"\\ScreenShotFolder\\\\gmailLogo.png");
        logoSource.renameTo(logoTar);

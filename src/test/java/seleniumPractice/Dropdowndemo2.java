@@ -1,5 +1,6 @@
 package seleniumPractice;
 
+import java.lang.foreign.Linker.Option;
 import java.time.Duration;
 import java.util.List;
 
@@ -25,6 +26,7 @@ public class Dropdowndemo2 {
 	   System.out.println(option.getText());
 	  
    }
+   select.selectByVisibleText("India");
    driver.close();
 	}
 

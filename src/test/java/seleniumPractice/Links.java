@@ -18,10 +18,10 @@ public class Links {
 	public static void main(String[] args) throws IOException {
 		int brokenLinks = 0;
 		int workingLink=0;
-		ChromeOptions options = new ChromeOptions();
-		options.addArguments("--headless");
-		options.addArguments("--window-size=1920,1080");
-		WebDriver driver = new ChromeDriver(options);
+//		ChromeOptions options = new ChromeOptions();
+//		options.addArguments("--headless");
+//		options.addArguments("--window-size=1920,1080");
+		WebDriver driver = new ChromeDriver();
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 		driver.get("https://www.opencart.com/");
 		driver.manage().window().maximize();

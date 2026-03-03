@@ -7,10 +7,11 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
 
 public class CheckboxesDemo {
-
-	public static void main(String[] args) {
+@Test
+	public  void  clickCheckBox(){
    WebDriver driver = new ChromeDriver();
    driver.manage().window().maximize();
    driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
@@ -21,7 +22,9 @@ public class CheckboxesDemo {
    List<WebElement> checkboxes= driver.findElements(By.xpath("//input[@class='form-check-input' and @type='checkbox']"));  
    for(WebElement checkbox:checkboxes) {
 	   checkbox.click();
+
    }
+        driver.quit();
   // driver.close();
    
 	}

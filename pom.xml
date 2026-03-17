@@ -48,6 +48,34 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/x
     <version>2.25.1</version>
 </dependency>
   </dependencies>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.2.5</version>
+                <configuration>
+                    <systemPropertyVariables>
+                        <allure.results.directory>target/allure-results</allure.results.directory>
+                    </systemPropertyVariables>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>21</source>
+                    <target>21</target>
+                    <compilerArgs>--enable-preview</compilerArgs>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+=======
+>>>>>>> b7b4097 (17-03-2026)
   <build>
     <plugins>
         <plugin>
@@ -62,4 +90,8 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/x
         </plugin>
     </plugins>
 </build>
+<<<<<<< HEAD
+=======
+>>>>>>> 67e7812 (17/03/2026)
+>>>>>>> b7b4097 (17-03-2026)
 </project>

@@ -12,6 +12,8 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.FluentWait;
+import org.openqa.selenium.support.ui.Wait;
 
 public class GmailReg {
 
@@ -20,6 +22,8 @@ public class GmailReg {
     WebDriver driver = new ChromeDriver();
     driver.manage().window().maximize();
     driver.get("https://www.gmail.com");
+  
+    		
    List<WebElement> allLinks= driver.findElements(By.tagName("a"));
    for(WebElement link: allLinks) {
 	   String hrefref= link.getAttribute("Href");

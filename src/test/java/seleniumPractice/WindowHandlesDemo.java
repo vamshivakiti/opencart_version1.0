@@ -26,6 +26,7 @@ public class WindowHandlesDemo {
       driver.switchTo().window(windowsList.get(1));
         driver.close();
         driver.switchTo().window(windowsList.get(0));
+        driver.switchTo().defaultContent();
         System.out.println(driver.getTitle());
         driver.close();
         

@@ -19,25 +19,64 @@ public class CheckBoxDemo {
 		WebDriver driver = new ChromeDriver(chromeptions);
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+		
+		// Step 1: Navigate to the test automation practice website
 		driver.get("https://testautomationpractice.blogspot.com/");
-		List<WebElement> options=driver.findElements(By.xpath("//input[@class='form-check-input' and @type='checkbox']"));
+		System.out.println("Navigated to: https://testautomationpractice.blogspot.com/");
 		
-		for(WebElement option:options)
-		{ option.click(); }
-		 
-		// To select all check boxes
+		// Step 2: Find all checkboxes
+		List<WebElement> allCheckboxes = driver.findElements(By.xpath("//input[@class='form-check-input' and @type='checkbox']"));
+		System.out.println("Total checkboxes found: " + allCheckboxes.size());
 		
-		 for (int i=0; i<options.size();i++) { options.get(i).click(); }
-		 
+		// Step 3: Find and verify weekday checkboxes (Monday to Friday - first 5 checkboxes)
+		String[] weekdays = {"Monday", "Tuesday", "Wednesday", "Thursday", "Friday"};
 		
-		// To select last 3 checkboxes
-		for(int k =4; k<options.size();k ++) {
-			options.get(k).click();
+		System.out.println("\n--- Verifying Weekday Checkboxes ---");
+		for(int i = 0; i < 5 && i < allCheckboxes.size(); i++) {
+			WebElement checkbox = allCheckboxes.get(i);
+			boolean isDisplayed = checkbox.isDisplayed();
+			System.out.println(weekdays[i] + " checkbox is displayed: " + isDisplayed);
 		}
 		
-		for(int k =4; k<options.size();k ++) {
-			options.get(k).click();
+		// Step 4: Check weekday checkboxes individually and verify
+		System.out.println("\n--- Checking Weekday Checkboxes Individually ---");
+		for(int i = 0; i < 5 && i < allCheckboxes.size(); i++) {
+			WebElement checkbox = allCheckboxes.get(i);
+			if(!checkbox.isSelected()) {
+				checkbox.click();
+				System.out.println(weekdays[i] + " - Checked: " + checkbox.isSelected());
+			}
 		}
+		
+		// Step 5: Uncheck all weekday checkboxes
+		System.out.println("\n--- Unchecking Weekday Checkboxes ---");
+		for(int i = 0; i < 5 && i < allCheckboxes.size(); i++) {
+			WebElement checkbox = allCheckboxes.get(i);
+			if(checkbox.isSelected()) {
+				checkbox.click();
+				System.out.println(weekdays[i] + " - Unchecked: " + !checkbox.isSelected());
+			}
+		}
+		
+		// Step 6: Check all weekday checkboxes at once
+		System.out.println("\n--- Checking All Weekday Checkboxes at Once ---");
+		for(int i = 0; i < 5 && i < allCheckboxes.size(); i++) {
+			allCheckboxes.get(i).click();
+		}
+		System.out.println("All weekday checkboxes checked!");
+		
+		// Step 7: Verify all weekday checkboxes are checked
+		System.out.println("\n--- Final Verification ---");
+		boolean allWeekdaysChecked = true;
+		for(int i = 0; i < 5 && i < allCheckboxes.size(); i++) {
+			boolean isSelected = allCheckboxes.get(i).isSelected();
+			System.out.println(weekdays[i] + " is checked: " + isSelected);
+			if(!isSelected) {
+				allWeekdaysChecked = false;
+			}
+		}
+		System.out.println("\nAll weekday checkboxes successfully checked: " + allWeekdaysChecked);
+		
 		driver.quit();
 	}
 

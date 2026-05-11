@@ -1,5 +1,6 @@
 package interview;
 
+import java.util.HashSet;
 import java.util.LinkedHashSet;
 import java.util.Scanner;
 
@@ -10,7 +11,7 @@ public class PrintUniqueChar {
 
 	public static void main(String[] args) {
 		//String data = new TextFileReader().readDataFromFIle("textFile");
-		WebDriver driver = new ChromeDriver();
+	
 		//driver.get(data);
 		// TODO Auto-generated method stub
 		Scanner sc = new Scanner(System.in);

@@ -1,10 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< Upstream, based on 67e7812722504e51a6326dfc90b8dc44826ab7ac
 <testng-results ignored="0" total="3" passed="1" failed="1" skipped="1">
+=======
+<testng-results ignored="0" total="22" passed="12" failed="10" skipped="0">
+>>>>>>> f432f14 updated on 10/05/2026
   <reporter-output>
   </reporter-output>
+<<<<<<< Upstream, based on 67e7812722504e51a6326dfc90b8dc44826ab7ac
   <suite started-at="2026-02-17T16:09:17 IST" name="Suite" finished-at="2026-02-17T16:09:36 IST" duration-ms="19244">
+=======
+  <suite started-at="2026-04-14T11:34:44 IST" name="OrangeHRM Login Test Suite" finished-at="2026-04-14T11:40:37 IST" duration-ms="352221">
+>>>>>>> f432f14 updated on 10/05/2026
     <groups>
     </groups>
+<<<<<<< Upstream, based on 67e7812722504e51a6326dfc90b8dc44826ab7ac
     <test started-at="2026-02-17T16:09:17 IST" name="edgeTest" finished-at="2026-02-17T16:09:17 IST" duration-ms="700">
       <class name="TestNgDemo.ParamBrowser">
         <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:TestNgDemo.ParamBrowser@43c1b556]" started-at="2026-02-17T16:09:17 IST" name="setUp" finished-at="2026-02-17T16:09:17 IST" duration-ms="554" status="FAIL">
@@ -72,9 +81,15 @@ at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.j
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.remote.NoSuchDriverException -->
+=======
+    <test started-at="2026-04-14T11:34:44 IST" name="OrangeHRM Login Positive Tests" finished-at="2026-04-14T11:36:13 IST" duration-ms="88883">
+      <class name="seleniumPractice.OrangeHRMLoginPositiveTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:seleniumPractice.OrangeHRMLoginPositiveTest@49c90a9c]" started-at="2026-04-14T11:34:44 IST" name="setUp" finished-at="2026-04-14T11:34:50 IST" duration-ms="5600" status="PASS">
+>>>>>>> f432f14 updated on 10/05/2026
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
+<<<<<<< Upstream, based on 67e7812722504e51a6326dfc90b8dc44826ab7ac
         <test-method signature="Test()[pri:0, instance:TestNgDemo.ParamBrowser@43c1b556]" started-at="2026-02-17T16:09:17 IST" name="Test" finished-at="2026-02-17T16:09:17 IST" duration-ms="0" status="SKIP">
           <exception class="org.openqa.selenium.remote.NoSuchDriverException">
             <message>
@@ -128,12 +143,60 @@ at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.j
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.remote.NoSuchDriverException -->
+=======
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:seleniumPractice.OrangeHRMLoginPositiveTest@49c90a9c]" started-at="2026-04-14T11:34:50 IST" name="setUpTest" finished-at="2026-04-14T11:34:56 IST" duration-ms="5757" status="PASS">
+>>>>>>> f432f14 updated on 10/05/2026
           <reporter-output>
           </reporter-output>
+<<<<<<< Upstream, based on 67e7812722504e51a6326dfc90b8dc44826ab7ac
         </test-method> <!-- Test -->
         <test-method is-config="true" signature="TeatDown()[pri:0, instance:TestNgDemo.ParamBrowser@43c1b556]" started-at="2026-02-17T16:09:17 IST" name="TeatDown" finished-at="2026-02-17T16:09:17 IST" duration-ms="0" status="SKIP">
+=======
+        </test-method> <!-- setUpTest -->
+        <test-method signature="testLoginPageElementsDisplayed()[pri:1, instance:seleniumPractice.OrangeHRMLoginPositiveTest@49c90a9c]" started-at="2026-04-14T11:34:56 IST" name="testLoginPageElementsDisplayed" description="TC_P_001: Verify login page elements are displayed" finished-at="2026-04-14T11:35:08 IST" duration-ms="11601" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA['Forgot your password?' link should be visible expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: 'Forgot your password?' link should be visible expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at seleniumPractice.OrangeHRMLoginPositiveTest.testLoginPageElementsDisplayed(OrangeHRMLoginPositiveTest.java:37)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+>>>>>>> f432f14 updated on 10/05/2026
           <reporter-output>
           </reporter-output>
+<<<<<<< Upstream, based on 67e7812722504e51a6326dfc90b8dc44826ab7ac
         </test-method> <!-- TeatDown -->
       </class> <!-- TestNgDemo.ParamBrowser -->
     </test> <!-- edgeTest -->
@@ -353,4 +416,667 @@ at java.net.http/jdk.internal.net.http.PlainHttpConnection.connectAsync(PlainHtt
       </class> <!-- TestNgDemo.ParamBrowser -->
     </test> <!-- CromeTest -->
   </suite> <!-- Suite -->
+=======
+        </test-method> <!-- testLoginPageElementsDisplayed -->
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:seleniumPractice.OrangeHRMLoginPositiveTest@49c90a9c]" started-at="2026-04-14T11:35:08 IST" name="setUpTest" finished-at="2026-04-14T11:35:09 IST" duration-ms="831" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method signature="testSuccessfulLogin()[pri:2, instance:seleniumPractice.OrangeHRMLoginPositiveTest@49c90a9c]" started-at="2026-04-14T11:35:09 IST" name="testSuccessfulLogin" description="TC_P_002: Successful login with valid credentials" finished-at="2026-04-14T11:35:23 IST" duration-ms="14027" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Login should be successful with valid credentials expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Login should be successful with valid credentials expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at seleniumPractice.OrangeHRMLoginPositiveTest.testSuccessfulLogin(OrangeHRMLoginPositiveTest.java:63)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSuccessfulLogin -->
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:seleniumPractice.OrangeHRMLoginPositiveTest@49c90a9c]" started-at="2026-04-14T11:35:23 IST" name="setUpTest" finished-at="2026-04-14T11:35:24 IST" duration-ms="1249" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method signature="testUsernameFieldAcceptsInput()[pri:3, instance:seleniumPractice.OrangeHRMLoginPositiveTest@49c90a9c]" started-at="2026-04-14T11:35:24 IST" name="testUsernameFieldAcceptsInput" description="TC_P_003: Verify username field accepts input" finished-at="2026-04-14T11:35:34 IST" duration-ms="10099" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for presence of element located by: By.name: username (tried for 10 second(s) with 500 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.name: username (tried for 10 second(s) with 500 milliseconds interval)
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at seleniumPractice.OrangeHRMLoginPage.enterUsername(OrangeHRMLoginPage.java:36)
+at seleniumPractice.OrangeHRMLoginPositiveTest.testUsernameFieldAcceptsInput(OrangeHRMLoginPositiveTest.java:80)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"*[name='username']"}
+  (Session info: chrome=146.0.7680.178)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.34.0', revision: '707dcb4246*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [934c887169aea865e4e1432d6feb4229, findElement {using=name, value=username}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.178, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\LENOVO\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56175}, goog:processID: 5076, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56175/devtoo..., se:cdpVersion: 146.0.7680.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 934c887169aea865e4e1432d6feb4229
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
+at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:171)
+at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:168)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+... 28 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUsernameFieldAcceptsInput -->
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:seleniumPractice.OrangeHRMLoginPositiveTest@49c90a9c]" started-at="2026-04-14T11:35:34 IST" name="setUpTest" finished-at="2026-04-14T11:35:37 IST" duration-ms="2888" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method signature="testPasswordFieldAcceptsInput()[pri:4, instance:seleniumPractice.OrangeHRMLoginPositiveTest@49c90a9c]" started-at="2026-04-14T11:35:37 IST" name="testPasswordFieldAcceptsInput" description="TC_P_004: Verify password field accepts input" finished-at="2026-04-14T11:35:47 IST" duration-ms="10063" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for presence of element located by: By.name: password (tried for 10 second(s) with 500 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.name: password (tried for 10 second(s) with 500 milliseconds interval)
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at seleniumPractice.OrangeHRMLoginPage.enterPassword(OrangeHRMLoginPage.java:46)
+at seleniumPractice.OrangeHRMLoginPositiveTest.testPasswordFieldAcceptsInput(OrangeHRMLoginPositiveTest.java:97)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"*[name='password']"}
+  (Session info: chrome=146.0.7680.178)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.34.0', revision: '707dcb4246*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [934c887169aea865e4e1432d6feb4229, findElement {using=name, value=password}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.178, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\LENOVO\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56175}, goog:processID: 5076, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56175/devtoo..., se:cdpVersion: 146.0.7680.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 934c887169aea865e4e1432d6feb4229
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
+at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:171)
+at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:168)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+... 28 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPasswordFieldAcceptsInput -->
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:seleniumPractice.OrangeHRMLoginPositiveTest@49c90a9c]" started-at="2026-04-14T11:35:47 IST" name="setUpTest" finished-at="2026-04-14T11:35:48 IST" duration-ms="994" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method signature="testLoginPageTitle()[pri:5, instance:seleniumPractice.OrangeHRMLoginPositiveTest@49c90a9c]" started-at="2026-04-14T11:35:48 IST" name="testLoginPageTitle" description="TC_P_005: Verify page title on login page" finished-at="2026-04-14T11:35:48 IST" duration-ms="35" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginPageTitle -->
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:seleniumPractice.OrangeHRMLoginPositiveTest@49c90a9c]" started-at="2026-04-14T11:35:48 IST" name="setUpTest" finished-at="2026-04-14T11:35:50 IST" duration-ms="1751" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method signature="testLoginPageURL()[pri:6, instance:seleniumPractice.OrangeHRMLoginPositiveTest@49c90a9c]" started-at="2026-04-14T11:35:50 IST" name="testLoginPageURL" description="TC_P_006: Verify login page URL" finished-at="2026-04-14T11:35:50 IST" duration-ms="21" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[URL should contain auth/login expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: URL should contain auth/login expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at seleniumPractice.OrangeHRMLoginPositiveTest.testLoginPageURL(OrangeHRMLoginPositiveTest.java:129)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginPageURL -->
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:seleniumPractice.OrangeHRMLoginPositiveTest@49c90a9c]" started-at="2026-04-14T11:35:50 IST" name="setUpTest" finished-at="2026-04-14T11:35:51 IST" duration-ms="897" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method signature="testLoginButtonClickable()[pri:7, instance:seleniumPractice.OrangeHRMLoginPositiveTest@49c90a9c]" started-at="2026-04-14T11:35:51 IST" name="testLoginButtonClickable" description="TC_P_007: Verify login button is clickable" finished-at="2026-04-14T11:36:01 IST" duration-ms="10071" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Login button should be clickable expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Login button should be clickable expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at seleniumPractice.OrangeHRMLoginPositiveTest.testLoginButtonClickable(OrangeHRMLoginPositiveTest.java:143)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginButtonClickable -->
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:seleniumPractice.OrangeHRMLoginPositiveTest@49c90a9c]" started-at="2026-04-14T11:36:01 IST" name="setUpTest" finished-at="2026-04-14T11:36:02 IST" duration-ms="1346" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method signature="testCompleteLoginWorkflow()[pri:8, instance:seleniumPractice.OrangeHRMLoginPositiveTest@49c90a9c]" started-at="2026-04-14T11:36:02 IST" name="testCompleteLoginWorkflow" description="TC_P_008: Complete login workflow" finished-at="2026-04-14T11:36:12 IST" duration-ms="10067" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Username field should be visible expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Username field should be visible expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at seleniumPractice.OrangeHRMLoginPositiveTest.testCompleteLoginWorkflow(OrangeHRMLoginPositiveTest.java:157)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCompleteLoginWorkflow -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:seleniumPractice.OrangeHRMLoginPositiveTest@49c90a9c]" started-at="2026-04-14T11:36:13 IST" name="tearDown" finished-at="2026-04-14T11:36:13 IST" duration-ms="770" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- seleniumPractice.OrangeHRMLoginPositiveTest -->
+    </test> <!-- OrangeHRM Login Positive Tests -->
+    <test started-at="2026-04-14T11:36:13 IST" name="OrangeHRM Login Negative Tests" finished-at="2026-04-14T11:40:37 IST" duration-ms="263173">
+      <class name="seleniumPractice.OrangeHRMLoginNegativeTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:seleniumPractice.OrangeHRMLoginNegativeTest@81d9a72]" started-at="2026-04-14T11:36:13 IST" name="setUp" finished-at="2026-04-14T11:36:15 IST" duration-ms="1682" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:seleniumPractice.OrangeHRMLoginNegativeTest@81d9a72]" started-at="2026-04-14T11:36:15 IST" name="setUpTest" finished-at="2026-04-14T11:36:18 IST" duration-ms="2705" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method signature="testLoginWithInvalidUsername()[pri:1, instance:seleniumPractice.OrangeHRMLoginNegativeTest@81d9a72]" started-at="2026-04-14T11:36:18 IST" name="testLoginWithInvalidUsername" description="TC_N_001: Login with invalid username" finished-at="2026-04-14T11:36:42 IST" duration-ms="23657" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Error message should be displayed expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Error message should be displayed expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at seleniumPractice.OrangeHRMLoginNegativeTest.testLoginWithInvalidUsername(OrangeHRMLoginNegativeTest.java:47)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginWithInvalidUsername -->
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:seleniumPractice.OrangeHRMLoginNegativeTest@81d9a72]" started-at="2026-04-14T11:36:42 IST" name="setUpTest" finished-at="2026-04-14T11:36:42 IST" duration-ms="420" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method signature="testLoginWithInvalidPassword()[pri:2, instance:seleniumPractice.OrangeHRMLoginNegativeTest@81d9a72]" started-at="2026-04-14T11:36:42 IST" name="testLoginWithInvalidPassword" description="TC_N_002: Login with invalid password" finished-at="2026-04-14T11:37:05 IST" duration-ms="23237" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Error message should be displayed expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Error message should be displayed expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at seleniumPractice.OrangeHRMLoginNegativeTest.testLoginWithInvalidPassword(OrangeHRMLoginNegativeTest.java:80)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginWithInvalidPassword -->
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:seleniumPractice.OrangeHRMLoginNegativeTest@81d9a72]" started-at="2026-04-14T11:37:05 IST" name="setUpTest" finished-at="2026-04-14T11:37:06 IST" duration-ms="768" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method signature="testLoginWithEmptyUsername()[pri:3, instance:seleniumPractice.OrangeHRMLoginNegativeTest@81d9a72]" started-at="2026-04-14T11:37:06 IST" name="testLoginWithEmptyUsername" description="TC_N_003: Login with empty username" finished-at="2026-04-14T11:37:19 IST" duration-ms="12822" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginWithEmptyUsername -->
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:seleniumPractice.OrangeHRMLoginNegativeTest@81d9a72]" started-at="2026-04-14T11:37:19 IST" name="setUpTest" finished-at="2026-04-14T11:37:19 IST" duration-ms="596" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method signature="testLoginWithEmptyPassword()[pri:4, instance:seleniumPractice.OrangeHRMLoginNegativeTest@81d9a72]" started-at="2026-04-14T11:37:19 IST" name="testLoginWithEmptyPassword" description="TC_N_004: Login with empty password" finished-at="2026-04-14T11:37:32 IST" duration-ms="12837" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginWithEmptyPassword -->
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:seleniumPractice.OrangeHRMLoginNegativeTest@81d9a72]" started-at="2026-04-14T11:37:32 IST" name="setUpTest" finished-at="2026-04-14T11:37:33 IST" duration-ms="366" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method signature="testLoginWithEmptyBoth()[pri:5, instance:seleniumPractice.OrangeHRMLoginNegativeTest@81d9a72]" started-at="2026-04-14T11:37:33 IST" name="testLoginWithEmptyBoth" description="TC_N_005: Login with empty username and password" finished-at="2026-04-14T11:37:45 IST" duration-ms="12288" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginWithEmptyBoth -->
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:seleniumPractice.OrangeHRMLoginNegativeTest@81d9a72]" started-at="2026-04-14T11:37:45 IST" name="setUpTest" finished-at="2026-04-14T11:37:45 IST" duration-ms="408" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method signature="testLoginWithWrongCasePassword()[pri:6, instance:seleniumPractice.OrangeHRMLoginNegativeTest@81d9a72]" started-at="2026-04-14T11:37:45 IST" name="testLoginWithWrongCasePassword" description="TC_N_006: Login with case-sensitive password" finished-at="2026-04-14T11:38:08 IST" duration-ms="22880" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Error message should be displayed expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Error message should be displayed expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at seleniumPractice.OrangeHRMLoginNegativeTest.testLoginWithWrongCasePassword(OrangeHRMLoginNegativeTest.java:188)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginWithWrongCasePassword -->
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:seleniumPractice.OrangeHRMLoginNegativeTest@81d9a72]" started-at="2026-04-14T11:38:08 IST" name="setUpTest" finished-at="2026-04-14T11:38:09 IST" duration-ms="442" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method signature="testLoginWithSpecialCharacters()[pri:7, instance:seleniumPractice.OrangeHRMLoginNegativeTest@81d9a72]" started-at="2026-04-14T11:38:09 IST" name="testLoginWithSpecialCharacters" description="TC_N_007: Login with special characters" finished-at="2026-04-14T11:38:21 IST" duration-ms="12733" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginWithSpecialCharacters -->
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:seleniumPractice.OrangeHRMLoginNegativeTest@81d9a72]" started-at="2026-04-14T11:38:21 IST" name="setUpTest" finished-at="2026-04-14T11:38:22 IST" duration-ms="933" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method signature="testLoginWithSpaces()[pri:8, instance:seleniumPractice.OrangeHRMLoginNegativeTest@81d9a72]" started-at="2026-04-14T11:38:22 IST" name="testLoginWithSpaces" description="TC_N_008: Login with spaces in credentials" finished-at="2026-04-14T11:38:35 IST" duration-ms="12824" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginWithSpaces -->
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:seleniumPractice.OrangeHRMLoginNegativeTest@81d9a72]" started-at="2026-04-14T11:38:35 IST" name="setUpTest" finished-at="2026-04-14T11:38:37 IST" duration-ms="1648" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method signature="testLoginWithSQLInjection()[pri:9, instance:seleniumPractice.OrangeHRMLoginNegativeTest@81d9a72]" started-at="2026-04-14T11:38:37 IST" name="testLoginWithSQLInjection" description="TC_N_009: Login with SQL injection attempt" finished-at="2026-04-14T11:38:53 IST" duration-ms="15708" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginWithSQLInjection -->
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:seleniumPractice.OrangeHRMLoginNegativeTest@81d9a72]" started-at="2026-04-14T11:38:53 IST" name="setUpTest" finished-at="2026-04-14T11:38:54 IST" duration-ms="1506" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method signature="testMultipleFailedLoginAttempts()[pri:10, instance:seleniumPractice.OrangeHRMLoginNegativeTest@81d9a72]" started-at="2026-04-14T11:38:54 IST" name="testMultipleFailedLoginAttempts" description="TC_N_010: Multiple failed login attempts" finished-at="2026-04-14T11:39:39 IST" duration-ms="45136" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMultipleFailedLoginAttempts -->
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:seleniumPractice.OrangeHRMLoginNegativeTest@81d9a72]" started-at="2026-04-14T11:39:39 IST" name="setUpTest" finished-at="2026-04-14T11:39:40 IST" duration-ms="926" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method signature="testLoginWithMultipleInvalidCredentials(java.lang.String,java.lang.String,java.lang.String)[pri:11, instance:seleniumPractice.OrangeHRMLoginNegativeTest@81d9a72]" started-at="2026-04-14T11:39:40 IST" name="testLoginWithMultipleInvalidCredentials" description="TC_N_011: Test with multiple invalid credentials" data-provider="invalidCredentials" finished-at="2026-04-14T11:39:54 IST" duration-ms="14182" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[InvalidUser]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Invalid username]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginWithMultipleInvalidCredentials -->
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:seleniumPractice.OrangeHRMLoginNegativeTest@81d9a72]" started-at="2026-04-14T11:39:54 IST" name="setUpTest" finished-at="2026-04-14T11:39:56 IST" duration-ms="2090" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method signature="testLoginWithMultipleInvalidCredentials(java.lang.String,java.lang.String,java.lang.String)[pri:11, instance:seleniumPractice.OrangeHRMLoginNegativeTest@81d9a72]" started-at="2026-04-14T11:39:56 IST" name="testLoginWithMultipleInvalidCredentials" description="TC_N_011: Test with multiple invalid credentials" data-provider="invalidCredentials" finished-at="2026-04-14T11:40:10 IST" duration-ms="13514" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[wrongpass]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Invalid password]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginWithMultipleInvalidCredentials -->
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:seleniumPractice.OrangeHRMLoginNegativeTest@81d9a72]" started-at="2026-04-14T11:40:10 IST" name="setUpTest" finished-at="2026-04-14T11:40:10 IST" duration-ms="412" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method signature="testLoginWithMultipleInvalidCredentials(java.lang.String,java.lang.String,java.lang.String)[pri:11, instance:seleniumPractice.OrangeHRMLoginNegativeTest@81d9a72]" started-at="2026-04-14T11:40:10 IST" name="testLoginWithMultipleInvalidCredentials" description="TC_N_011: Test with multiple invalid credentials" data-provider="invalidCredentials" finished-at="2026-04-14T11:40:23 IST" duration-ms="12717" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[user123]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[password]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Invalid username and password]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginWithMultipleInvalidCredentials -->
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:seleniumPractice.OrangeHRMLoginNegativeTest@81d9a72]" started-at="2026-04-14T11:40:23 IST" name="setUpTest" finished-at="2026-04-14T11:40:24 IST" duration-ms="370" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method signature="testLoginWithMultipleInvalidCredentials(java.lang.String,java.lang.String,java.lang.String)[pri:11, instance:seleniumPractice.OrangeHRMLoginNegativeTest@81d9a72]" started-at="2026-04-14T11:40:24 IST" name="testLoginWithMultipleInvalidCredentials" description="TC_N_011: Test with multiple invalid credentials" data-provider="invalidCredentials" finished-at="2026-04-14T11:40:36 IST" duration-ms="12652" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[test]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[test123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Non-existent user]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginWithMultipleInvalidCredentials -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:seleniumPractice.OrangeHRMLoginNegativeTest@81d9a72]" started-at="2026-04-14T11:40:36 IST" name="tearDown" finished-at="2026-04-14T11:40:37 IST" duration-ms="452" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- seleniumPractice.OrangeHRMLoginNegativeTest -->
+    </test> <!-- OrangeHRM Login Negative Tests -->
+  </suite> <!-- OrangeHRM Login Test Suite -->
+>>>>>>> f432f14 updated on 10/05/2026
 </testng-results>

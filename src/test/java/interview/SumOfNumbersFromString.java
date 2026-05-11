@@ -26,35 +26,35 @@ if(!number.isEmpty()) {
 }
 System.out.println("Sum ="+sum);
 
-
-//String input2="6jhgg87hyg@78*u";
-Scanner sc = new Scanner(System.in);
-System.out.println("Enter the value with alpha numeric");
-String input2 =sc.nextLine();
-int sum2=0;
-String number2 ="";
-for(int i=0;i<input2.length();i++) {
-	char ch2 =input2.charAt(i);
-	if(Character.isDigit(ch2)) {
-		number2=number2+ch2;
-	}
-	else {
-		if(!number2.isEmpty()) {
-			sum2=sum2+Integer.parseInt(number2);
-			number2="";
-		}
-	}
-	 {
-		if(!number2.isEmpty()) {
-			sum2=sum2+Integer.parseInt(number2);
-			number2="";
-		}
-	}
-}
-
-System.out.println(sum2);
-
-
+//
+////String input2="6jhgg87hyg@78*u";
+//Scanner sc = new Scanner(System.in);
+//System.out.println("Enter the value with alpha numeric");
+//String input2 =sc.nextLine();
+//int sum2=0;
+//String number2 ="";
+//for(int i=0;i<input2.length();i++) {
+//	char ch2 =input2.charAt(i);
+//	if(Character.isDigit(ch2)) {
+//		number2=number2+ch2;
+//	}
+//	else {
+//		if(!number2.isEmpty()) {
+//			sum2=sum2+Integer.parseInt(number2);
+//			number2="";
+//		}
+//	}
+//	 {
+//		if(!number2.isEmpty()) {
+//			sum2=sum2+Integer.parseInt(number2);
+//			number2="";
+//		}
+//	}
+//}
+//
+//System.out.println(sum2);
+//
+//
 
 	}
 }

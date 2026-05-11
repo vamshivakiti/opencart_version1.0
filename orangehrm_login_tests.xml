@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="OrangeHRM Login Test Suite" verbose="2">
+	<test name="OrangeHRM Login Positive Tests">
+		<classes>
+			<class name="seleniumPractice.OrangeHRMLoginPositiveTest">
+				<methods>
+					<include name="testLoginPageElementsDisplayed" />
+					<include name="testSuccessfulLogin" />
+					<include name="testUsernameFieldAcceptsInput" />
+					<include name="testPasswordFieldAcceptsInput" />
+					<include name="testLoginPageTitle" />
+					<include name="testLoginPageURL" />
+					<include name="testLoginButtonClickable" />
+					<include name="testCompleteLoginWorkflow" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="OrangeHRM Login Negative Tests">
+		<classes>
+			<class name="seleniumPractice.OrangeHRMLoginNegativeTest">
+				<methods>
+					<include name="testLoginWithInvalidUsername" />
+					<include name="testLoginWithInvalidPassword" />
+					<include name="testLoginWithEmptyUsername" />
+					<include name="testLoginWithEmptyPassword" />
+					<include name="testLoginWithEmptyBoth" />
+					<include name="testLoginWithWrongCasePassword" />
+					<include name="testLoginWithSpecialCharacters" />
+					<include name="testLoginWithSpaces" />
+					<include name="testLoginWithSQLInjection" />
+					<include name="testMultipleFailedLoginAttempts" />
+					<include name="testLoginWithMultipleInvalidCredentials" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>
